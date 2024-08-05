@@ -38,7 +38,7 @@ def convertir_tiempo():
             return jsonify({"tiempo": result,"unidad de salida":data['salida']})
 
     except KeyError:
-        return jsonify({"tiempo": None,"error":"Verifique que tiempo sea un entero, que entrada y salida sean cadena (h, m ó s)"})
+        return jsonify({"Tiempo": None,"Error":"Verifique que tiempo sea un entero, que entrada y salida sean cadena (h, m ó s)"})
 
 
 if __name__ == '__main__':
