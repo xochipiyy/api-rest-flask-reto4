@@ -35,7 +35,7 @@ def convertir_tiempo():
             if (data['entrada']=='h' or data['entrada']=='m' or data['entrada']=='s') and (data['salida']=='h' or data['salida']=='m' or data['salida']=='s'):
                 result=convertir(input_tiempo,data['entrada'],data['salida'])
             
-            return jsonify({"Tiempo": result,"Unidad de salida":data['salida']})
+            return jsonify({"Tiempo": result,"Unidad salida":data['salida']})
 
     except KeyError:
         return jsonify({"Tiempo": None,"Error":"Verifique que tiempo sea un entero, entrada y salida sean cadena (h, m ó s)"})
